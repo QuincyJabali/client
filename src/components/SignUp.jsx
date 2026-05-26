@@ -155,7 +155,7 @@ const SignUp = () => {
     if (!form.username.trim()) e.username = "Username is required";
     if (!form.email.includes("@")) e.email = "Enter a valid email";
     if (form.password.length < 8) e.password = "Password must be at least 8 characters";
-    if (!/^\+?[\d\s\-]{7,}$/.test(form.phone)) e.phone = "Enter a valid phone number";
+    if (!/^\+?[\d\s-]{7,}$/.test(form.phone)) e.phone = "Enter a valid phone number";
     return e;
   };
 
